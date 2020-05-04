@@ -19,7 +19,7 @@ def get_japanese_emoticon(data_file, eng_emoticon)
   library.each do |key, value|
     value.each do |key2, value2|
       if value2 == eng_emoticon
-        japn_version = key.dig(:japanese)
+        japn_version = key2.dig(:japanese)
       end
     end
   end
