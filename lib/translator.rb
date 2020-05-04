@@ -23,9 +23,6 @@ def get_japanese_emoticon(data_file, eng_emoticon)
       end
     end
   end
-  library.each do |new_key, new_value|
-    if new_value == 
-  end
   japn_version
 end
 
