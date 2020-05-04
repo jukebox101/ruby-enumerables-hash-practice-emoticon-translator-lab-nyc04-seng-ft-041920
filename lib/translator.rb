@@ -15,7 +15,7 @@ end
 def get_japanese_emoticon(data_file, eng_emoticon)
   # code goes here
   library = load_library(data_file)
-  
+  japn_version = nil
   library.each do |key, value|
     value.each do |key2, value2|
       if value2 == eng_emoticon
