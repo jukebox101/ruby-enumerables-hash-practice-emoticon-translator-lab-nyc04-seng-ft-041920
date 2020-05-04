@@ -16,6 +16,8 @@ def get_japanese_emoticon(data_file, eng_emoticon)
   # code goes here
   library = load_library(data_file)
   japn_version = nil
+  not_found = "Sorry, that emoticon was not found"
+  
   library.each do |key, value|
     value.each do |key2, value2|
       if value2 == eng_emoticon
@@ -23,7 +25,7 @@ def get_japanese_emoticon(data_file, eng_emoticon)
       end
     end
   end
-  japn_version
+  japn_version == nil ? not_found : japn_version 
 end
 
 def get_english_meaning(data_file, japn_emoticon)
